@@ -2,7 +2,12 @@
 
 
 function resetColors(){
-    
+    let whiteSquares = document.getElementsByClassName("white")
+    let blackSquares = document.getElementsByClassName("black")
+    for (let i = 0; i < whiteSquares.length; i++) {
+        whiteSquares[i].style.backgroundColor = "#E26D5A"
+        blackSquares[i].style.backgroundColor = "#3E2A35"
+    }
 }
 
 
