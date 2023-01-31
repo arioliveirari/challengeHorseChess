@@ -16,8 +16,10 @@ function resetColors(){
 
 function squareChose(){
     resetColors()
+    
     let row = arguments[0]
     let col = arguments[1]
+    document.getElementById(row+col).bacgroundImage = "url(images/horse.jpg)"
     console.log(row)
     console.log(col)
 
