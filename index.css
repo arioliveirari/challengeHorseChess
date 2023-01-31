@@ -1,8 +1,56 @@
 body {
-    margin: 0;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #d7bba8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 
-.container {
+
+#gameCode {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+#header {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#banner {
+    margin: 0 auto;
+    height: 400px;
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn{
+    width: 100px;
+    border: #3E2A35 solid 2px;
+    border-radius: 20px;
+    background-color: #E26D5A;
+}
+
+.chessboard {
+    width: 640px;
+    height: 640px;
+    margin: 20px auto;
+    border: 10px solid #000;
+    border-radius: 4px;
+    background: #e59110;
+
+}
+.black {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: #3E2A35;
+    
+}
+.white {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: #E26D5A;
 }
