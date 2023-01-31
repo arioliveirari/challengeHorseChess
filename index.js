@@ -4,11 +4,14 @@
 function resetColors(){
     let whiteSquares = document.getElementsByClassName("white")
     let blackSquares = document.getElementsByClassName("black")
+    let chessBtnReset = document.getElementsByClassName("chessBtn")
     for (let i = 0; i < whiteSquares.length; i++) {
         whiteSquares[i].style.backgroundColor = "#E26D5A"
         blackSquares[i].style.backgroundColor = "#3E2A35"
     }
-}
+    for (let i = 0; i < chessBtnReset.length; i++) {
+        chessBtnReset[i].style.opacity = 0
+} }
 
 
 
@@ -19,7 +22,10 @@ function squareChose(){
     
     let row = arguments[0]
     let col = arguments[1]
-    document.getElementById(row+col).bacgroundImage = "url(images/horse.jpg)"
+    document.getElementById(String(row)+String(col)).getElementsByClassName("chessBtn")[0].style.backgroundImage = "url(images/horse.gif)"
+    document.getElementById(String(row)+String(col)).getElementsByClassName("chessBtn")[0].style.backgroundColor = "inherit"
+    document.getElementById(String(row)+String(col)).getElementsByClassName("chessBtn")[0].style.opacity = 1
+    document.getElementById(String(row)+String(col)).getElementsByClassName("chessBtn")[0].style.backgroundSize = "cover"
     console.log(row)
     console.log(col)
 
