@@ -14,7 +14,7 @@ function resetColors(){
 
 
 
-function test(){
+function squareChose(){
     resetColors()
     let row = arguments[0]
     let col = arguments[1]
@@ -41,10 +41,22 @@ function test(){
         left2Down1      ,
     ]
     
-    for (let i = 0 ; 1  < 9 ; i++){
-        console.log(i)
-        console.log(possibleSquares[i])
-        document.getElementById(possibleSquares[i]).style.backgroundColor = "green"
+    for (let i = 0 ; i  < 8 ; i++){
+        if(
+            10 < +possibleSquares[i] && +possibleSquares[i] < 19 ||
+            20 < +possibleSquares[i] && +possibleSquares[i] < 29 ||
+            30 < +possibleSquares[i] && +possibleSquares[i] < 39 ||
+            40 < +possibleSquares[i] && +possibleSquares[i] < 49 ||
+            50 < +possibleSquares[i] && +possibleSquares[i] < 59 ||
+            60 < +possibleSquares[i] && +possibleSquares[i] < 69 ||
+            70 < +possibleSquares[i] && +possibleSquares[i] < 79 ||
+            80 < +possibleSquares[i] && +possibleSquares[i] < 89 
+        ){
+            console.log(possibleSquares[i])
+            document.getElementById(possibleSquares[i]).style.backgroundColor = "green"
+        } else {
+            
+        }
     }
     
 }
