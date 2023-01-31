@@ -24,7 +24,7 @@ function squareChose(){
     let col = arguments[1]
     document.getElementById(String(row)+String(col)).getElementsByClassName("chessBtn")[0].style.backgroundImage = "url(images/horse.gif)"
     document.getElementById(String(row)+String(col)).getElementsByClassName("chessBtn")[0].style.backgroundColor = "inherit"
-    document.getElementById(String(row)+String(col)).getElementsByClassName("chessBtn")[0].style.opacity = 1
+    document.getElementById(String(row)+String(col)).getElementsByClassName("chessBtn")[0].style.opacity = .7
     document.getElementById(String(row)+String(col)).getElementsByClassName("chessBtn")[0].style.backgroundSize = "cover"
     console.log(row)
     console.log(col)
