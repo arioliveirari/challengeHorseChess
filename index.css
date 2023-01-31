@@ -64,8 +64,8 @@ body {
 .chessBtn {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-color: inherit;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
     border: 0px ;
 }
 
